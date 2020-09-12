@@ -17,14 +17,19 @@ Included in that memory space is the 2Kb of CPU RAM, ports to access the PPU/APU
 small for bigger games, which is why memory mappers were used. These allowed for bank swapping, to use multiple PRG and CHR banks
 
 ### Memory map
-Address | Description
---------|-------------
+
 $0000   | 2Kb CPU RAM
+
 $0800   | Unused
+
 $2000   | PPU IO Ports
+
 $4000   | APU/Controller IO Ports
+
 $6000   | 8Kb Cartridge RAM (WRAM)
+
 $8000   | 32Kb Cartridge ROM
+
 $FFFA   | NMI/RESET/IRQ vectors
 
 ## PPU Overview
