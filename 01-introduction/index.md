@@ -1,4 +1,4 @@
-[back to main page](https://normalgamer.github.io/NES-Development/)
+[Back to main page](https://normalgamer.github.io/NES-Development/)
 
 # Introduction to the NES
 
