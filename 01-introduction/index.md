@@ -1,3 +1,5 @@
+(back to main page)[https://normalgamer.github.io/NES-Development/]
+
 # Introduction to the NES
 
 The NES is an 8-bit console released in 1985.
