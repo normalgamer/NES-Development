@@ -2,7 +2,20 @@
 
 # Introduction to the NES
 
-The NES is an 8-bit console released in 1985.
+The NES is an 8-bit console released in 1985. It was Nintendo's first home console.
+
+## Basic Terminology
+
+- Kb: Memory size is listed in kilobytes
+- ROM: Read Only Memory, holds unchangeable data. This is where the game's code and graphics are stored
+- RAM: Random Access Memory, holds data that can be changed. When power is removed, the data is erased
+- WRAM: Working RAM, this RAM is backed by a battery. It is used in carts to store save data
+- PRG: PRoGram memory, this is the game's code
+- CHR: CHaRacter memory, the graphics data
+- CPU: Central Processing Unit, the processor chip
+- PPU: Picture Processing Unit, the graphics chip
+- APU: Audio Processing Unit, the sound chip
+
 
 ## Architecture Overview
 The NES includes a custom 6502 based CPU, the 65C02, with and Audio Processing Unit (APU) and a controller handling inside one chip, and a Picture Processing Unit (PPU). There are 2 kilobytes of RAM connected to the CPU to store variables, and 2 kilobytes of RAM connected to the PPU.
