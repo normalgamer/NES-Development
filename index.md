@@ -4,4 +4,4 @@ This guide will teach you how to program your own NES games. Some basic hexadeci
 
 **THIS IS A WORK IN PROGRESS**
 
-1. [NES Architecture](https://github.com/normalgamer/NES-Development/blob/gh-pages/01-introduction/index.md)
+1. [NES Architecture](https://normalgamer.github.io/NES-Development/01-introduction/index.md)
