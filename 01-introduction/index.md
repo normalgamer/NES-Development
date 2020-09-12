@@ -2,8 +2,6 @@
 
 # Introduction to the NES
 
-The NES is an 8-bit console released in 1985. It was Nintendo's first home console.
-
 ## Basic Terminology
 
 - Kb: Memory size is listed in kilobytes
