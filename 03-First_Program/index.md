@@ -32,3 +32,33 @@ As we discussed earlier, the cart stores info in multiple banks. NESASM3 organiz
   .org $0000
   ; Graphics here
 ```
+
+## Including binary files
+
+Additional data files are frequently used for graphics data or level data. The incbin directive can be used to include that data in your .nes file. This data isn't used right now, but it's needed to make the .nes file size match the iNES header.
+
+```
+  .bank 2
+  .org $0000
+  
+  .incbin "mario.chr" ; Includes Super Mario Bros.' graphics
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
