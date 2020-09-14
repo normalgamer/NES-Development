@@ -26,30 +26,17 @@ The NES CPU is a 65c02, a modified version of the 8 bit 6502 used in other syste
 
 ### Memory map
 
-$0000   | 2Kb CPU RAM
-
-$0800   | Unused
-
-$2000   | PPU IO Ports
-
-$4000   | APU/Controller IO Ports
-
-$6000   | 8Kb Cartridge RAM (WRAM)
-
-$8000   | 32Kb Cartridge ROM
-
-$FFFA   | NMI/RESET/IRQ vectors
-
-$0000-$07FF | 2Kb internal RAM
-------------|-----------------------
-$0800-$0FFF | Mirrors of $0000-$7FFF
-$1000-$17FF | Mirrors of $0000-$7FFF
-$1800-$1FFF | Mirrors of $0000-$7FFF
-$2000-$2007 | [NES PPU](http://wiki.nesdev.com/w/index.php/PPU_registers) registers
-$2008-$3FFF | Mirrors of $2000-$2007 (repeats every 8 bytes)
-$4000-$4017 | [NES APU](http://wiki.nesdev.com/w/index.php/APU) and [I/O registers](http://wiki.nesdev.com/w/index.php/2A03)
-$4018-$401F | APU and I/O functionality that is normally disabled (see [CPU Test Mode](http://wiki.nesdev.com/w/index.php/CPU_Test_Mode))
-$4020-$FFFF | Cartridge space: PRG ROM, PRG RAM, and [mapper](http://wiki.nesdev.com/w/index.php/Mapper) registers
+Address range | Device
+--------------|-----------------------
+$0000-$07FF   | 2Kb internal RAM
+$0800-$0FFF   | Mirror of $0000-$7FFF
+$1000-$17FF   | Mirror of $0000-$7FFF
+$1800-$1FFF   | Mirror of $0000-$7FFF
+$2000-$2007   | [NES PPU](http://wiki.nesdev.com/w/index.php/PPU_registers) registers
+$2008-$3FFF   | Mirrors of $2000-$2007 (repeats every 8 bytes)
+$4000-$4017   | [NES APU](http://wiki.nesdev.com/w/index.php/APU) and [I/O registers](http://wiki.nesdev.com/w/index.php/2A03)
+$4018-$401F   | APU and I/O functionality that is normally disabled (see [CPU Test Mode](http://wiki.nesdev.com/w/index.php/CPU_Test_Mode))
+$4020-$FFFF   | Cartridge space: PRG ROM, PRG RAM, and [mapper](http://wiki.nesdev.com/w/index.php/Mapper) registers
 
 
 
