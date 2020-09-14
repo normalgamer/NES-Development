@@ -39,8 +39,9 @@ You could continue to do writes to fill out the rest of the palette. OR you can 
 PaletteData:
   .db $0F,$31,$32,$33,$0F,$35,$36,$37,$0F,$39,$3A,$3B,$0F,$3D,$3E,$0F ; Background palette data
   .db $0F,$1C,$15,$14,$0F,$02,$38,$3C,$0F,$1C,$15,$14,$0F,$02,$38,$3C ; Sprite palette data
-  ; Note: if you want to see how the colors look, open YY-CHR and tweak the colors
 ```
+
+Note: if you want to see how the colors look, open YY-CHR and tweak the colors. You should use the top palette for background and the bottom for sprites (the palettes are at the right of the PAL SET button, under the sprite editor). 
 
 Then a loop is used to copy those bytes to the palette in the PPU. The X register is used as an index into the palette, and used to count how many times the loop has repeated. To copy both palettes (a total of 32 bytes) the loop starts at 0 and counts up to 32:
 
@@ -148,6 +149,6 @@ Expanded the reset code. You don't need to know what it exactly does, it just re
 
 ## Putting it all together
 
-Download NESASM3 and Super Mario Bros.' CHR file from [here](). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
+Download NESASM3 and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/04-Displaying_sprites/sprites.zip). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
 
 Congratulations! You can now see Mario's head's back on screen!
