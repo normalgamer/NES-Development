@@ -11,3 +11,5 @@ This guide will teach you how to program your own NES games. Some basic hexadeci
 3. [First App](https://normalgamer.github.io/NES-Development/03-First_Program/)
 
 4. [Sprites and Palettes](https://normalgamer.github.io/NES-Development/04-Displaying_sprites/)
+
+5. [Multiple Sprites](https://normalgamer.github.io/NES-Development/05-Multiple_sprites/)
