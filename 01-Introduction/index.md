@@ -38,8 +38,16 @@ $4000-$4017   | [NES APU](http://wiki.nesdev.com/w/index.php/APU) and [I/O regis
 $4018-$401F   | APU and I/O functionality that is normally disabled (see [CPU Test Mode](http://wiki.nesdev.com/w/index.php/CPU_Test_Mode))
 $4020-$FFFF   | Cartridge space: PRG ROM, PRG RAM, and [mapper](http://wiki.nesdev.com/w/index.php/Mapper) registers
 
+Note: Most common boards and iNES mappers address ROM and Save/Work RAM in this format:
 
+- $6000-$7FFF: Battery backed Save/Work RAM (WRAM)
+- $8000-$FFFF: Usual ROM, commonly with mapper registers
 
+The CPU expects interrupt vectors in a fixed place at the end of the cartridge space:
+
+- $FFFA-$FFFB: NMI vector
+- $FFFC-$FFFD: RESET vector
+- $FFFE-$FFFF: IRQ/BRK vector
 
 ## PPU Overview
 
