@@ -1,6 +1,6 @@
 # NES Development
 
-This guide will teach you how to program your own NES games. Some basic hexadecimal knowledge is required. If you need any reference, [wiki.nesdev.com](wiki.nesdev.com) has a lot of information about memory maps, sprite copying, etc.
+This guide will teach you how to program your own NES games. Some basic hexadecimal knowledge is required. If you need any reference, [wiki.nesdev.com](http://wiki.nesdev.com/w/index.php/Nesdev_Wiki) has a lot of information about memory maps, sprite copying, etc.
 
 **THIS IS A WORK IN PROGRESS**
 
