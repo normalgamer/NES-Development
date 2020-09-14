@@ -87,6 +87,32 @@ $3F20   | Unused
 
 $3FFF   | End
 
+Address range | Device
+--------------|-------
+$0000-$0FFF   | Cartridge RAM/ROM, Pattern table 0 (first 256 8x8 tiles)
+$1000-$1FFF   | Cartridge RAM/ROM, Pattern table 1 (first 256 8x8 tiles)
+$2000-$23FF   | Nametable 0
+$2400-$27FF   | Nametable 1
+$2800-$2BFF   | Nametable 2
+$2C00-$2FFF   | Nametable 3
+$3000-$3EFF   | Mirrors of $2000-$2EFF
+$3F00-$3F1F   | Palette RAM Indexes
+$3F20-$3FFF   | Mirrors of $3F00-$3F1F
+
+PPU Registers | Name      | Description  
+--------------|-----------|------------
+$2000         | PPUCTRL   | Enable NMI, sprite/background table address
+$2001         | PPUMASK   | Controls the rendering of sprites and background
+$2002         | PPUSTATUS | This register reflects the state of various functions inside the PPU (VBlank, sprite overflow...)
+$2003         | OAMADDR   | Write the address of [OAM](http://wiki.nesdev.com/w/index.php/PPU_OAM) you want to access, to manipulate sprite position and color
+$2004         | OAMDATA   | Write OAM data here. 
+$2005         | PPUSCROLL | Changes the scroll position, used to scroll the screen
+$2006         | PPUADDR   | The CPU can't access directly the PPU memory, so it uses two registers to write to Video RAM. First loads an address to PPUADDR...
+$2007         | PPUDATA   | ...and then reads/writes data.
+$4014         | OAMDMA    | Writing $XX will upload 256 bytes of data from CPU page $XX00-$XXFF to the internal PPU OAM. This page is usually located in internal RAM $0200-$02FF, but cartridge ROM/RAM can be used too.
+
+For more info, visit http://wiki.nesdev.com/w/index.php/PPU_memory_map.
+
 ## Graphics System Overview
 
 ### Tiles
