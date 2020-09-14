@@ -82,7 +82,10 @@ NMI:  ; Remember the NMI label? We add the following code to start sprite transf
   LDA #$02
   STA $4014 ; Set the high byte (02) of the RAM address, start the transfer
             ; Now all sprite data located from $0200 address onwards will be copied to the PPU sprite memory
+  RTI
 ```
+
+$2003 and $4014 are OAM's low and high byte. The OAM is internal memory inside the PPU that stores up to 64 sprites, where each one takes 4 bytes. When we write the low and high bytes the data starts to be copied.
 
 Later on the lesson we will copy sprite data to the RAM addresses $0200-$02FF.
 
@@ -125,7 +128,7 @@ PPUCTRL ($2000)
 CPU RAM address $0200-$02FF is usually used to store the sprite data, which is then copied to the PPU. And the new code to set up the sprite data:
 
 ```
-  ; Sprite data stored at RAM addresses $0200-$0203. Once NMI is called it will copy data from here
+  ; Sprite data stored at RAM addresses $0200-$0203. When NMI is called it will copy data from here to the PPU's OAM
   LDA #$80
   STA $0200       ; Put sprite 0 in center ($80) of screen vertically
   STA $0203       ; Put sprite 0 in center ($80) of screen horizontally
