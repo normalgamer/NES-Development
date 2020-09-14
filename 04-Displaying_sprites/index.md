@@ -95,14 +95,14 @@ Each sprite needs 4 bytes of data for its position and tile information in this 
 
 - 1: Y Position - vertical position of the sprite. $00 is the top of the screen. Anything above $EF is off the bottom of the screen.
 
-- 2: Tile Number - this is the tile number ($00 to $FF) for the graphic to be taken from a Pattern Table. In YY-CHR, hover over the sprite and look at the bottom left corner to get the tile number.
+- 2: Tile Number - this is the tile number ($00 to $FF) for the graphic to be taken from a Pattern Table. In YY-CHR, hover over the sprite and look at the bottom of the program to get the tile number (Pattern: ADF[tile number]).
 
 - 3: Attributes - this holds color and displaying information:
   ```
   76543210
   |||   ||
   |||   ++- Color Palette of sprite.  Choose which set of 4 from the 16 colors to use
-  |||
+  |||		(The palette is made of four four-byte color combinations)
   ||+------ Priority (0: in front of background; 1: behind background)
   |+------- Flip sprite horizontally
   +-------- Flip sprite vertically
