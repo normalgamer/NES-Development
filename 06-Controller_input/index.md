@@ -86,7 +86,7 @@ For this example we're going to move Mario left and right. To do that we'll have
 
 ## Putting it all together
 
-Download source code and SMB CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/06-Controller_input/controller.zip). Double-click the build.bat script and you'll have a .nes file to open on an emulator. Open FCEUXD and click Config>Input to change your input.
+Download NESASM3, the source code and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/06-Controller_input/controller.zip). Double-click the build.bat script and you'll have a .nes file to open on an emulator. Open FCEUXD and click Config>Input to change your input.
 
 Congratulations! You can now move Mario left and right!
 
