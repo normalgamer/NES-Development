@@ -15,3 +15,12 @@ This guide will teach you how to program your own NES games. Some basic hexadeci
 5. [Multiple Sprites](https://normalgamer.github.io/NES-Development/05-Multiple_sprites/)
 
 6. [Controller Input](https://normalgamer.github.io/NES-Development/06-Controller_input/)
+
+
+## Other resources
+
+http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
+
+http://www.thealmightyguru.com/Games/Hacking/Wiki/index.php?title=6502_Opcodes
+
+
