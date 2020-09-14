@@ -40,6 +40,20 @@ $8000   | 32Kb Cartridge ROM
 
 $FFFA   | NMI/RESET/IRQ vectors
 
+$0000-$07FF | 2Kb internal RAM
+------------|-----------------------
+$0800-$0FFF | Mirrors of $0000-$7FFF
+$1000-$17FF | Mirrors of $0000-$7FFF
+$1800-$1FFF | Mirrors of $0000-$7FFF
+$2000-$2007 | [NES PPU](http://wiki.nesdev.com/w/index.php/PPU_registers) registers
+$2008-$3FFF | Mirrors of $2000-$2007 (repeats every 8 bytes)
+$4000-$4017 | [NES APU](http://wiki.nesdev.com/w/index.php/APU) and [I/O registers](http://wiki.nesdev.com/w/index.php/2A03)
+$4018-$401F | APU and I/O functionality that is normally disabled (see [CPU Test Mode](http://wiki.nesdev.com/w/index.php/CPU_Test_Mode))
+$4020-$FFFF | Cartridge space: PRG ROM, PRG RAM, and [mapper](http://wiki.nesdev.com/w/index.php/Mapper) registers
+
+
+
+
 ## PPU Overview
 
 The NES PPU is a custom chip that does all the graphics display. It includes internal RAM for sprites and the color palettes. There is RAM on the NES board that holds background, and the graphics are fetched from the cart CHR memory. The PPU processes one TV scanline at a time. If there are more than 8 sprites on the scanline the rest are ignored. This is why sometimes sprites flicker on screen when too much is happening at once. When all the scanlines are done there is a period when no graphics are sent out. This is called VBlank and is the only time graphics can be updated. Both the NTSC and PAL systems have a resolution of 256x240 pixels, but the top and bottom 8 rows are typically cut off by the NTSC TV resulting in 256x224, and some TV borders may cut from 0 to 8 additional rows. NTSC runs at 60Hz, while PAL runs at 50Hz.
