@@ -19,8 +19,8 @@ This guide will teach you how to program your own NES games. Some basic hexadeci
 
 ## Other resources
 
-http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
+[http://wiki.nesdev.com/w/index.php/Nesdev_Wiki](http://wiki.nesdev.com/w/index.php/Nesdev_Wiki)
 
-http://www.thealmightyguru.com/Games/Hacking/Wiki/index.php?title=6502_Opcodes
+[http://www.thealmightyguru.com/Games/Hacking/Wiki/index.php?title=6502_Opcodes](http://www.thealmightyguru.com/Games/Hacking/Wiki/index.php?title=6502_Opcodes)
 
 
