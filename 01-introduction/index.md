@@ -44,6 +44,8 @@ $FFFA   | NMI/RESET/IRQ vectors
 
 The NES PPU is a custom chip that does all the graphics display. It includes internal RAM for sprites and the color palettes. There is RAM on the NES board that holds background, and the graphics are fetched from the cart CHR memory. The PPU processes one TV scanline at a time. If there are more than 8 sprites on the scanline the rest are ignored. This is why sometimes sprites flicker on screen when too much is happening at once. When all the scanlines are done there is a period when no graphics are sent out. This is called VBlank and is the only time graphics can be updated. Both the NTSC and PAL systems have a resolution of 256x240 pixels, but the top and bottom 8 rows are typically cut off by the NTSC TV resulting in 256x224, and some TV borders may cut from 0 to 8 additional rows. NTSC runs at 60Hz, while PAL runs at 50Hz.
 
+You can't access the PPU's memory like you would normally do. In lesson 4, you'll learn how to use the PPU I/O ports to communicate with the PPU's internal RAM.
+
 ### Memory map
 
 $0000   | Cartridge RAM/ROM, Pattern table 0, 256 tiles
