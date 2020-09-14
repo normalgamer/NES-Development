@@ -13,3 +13,5 @@ This guide will teach you how to program your own NES games. Some basic hexadeci
 4. [Sprites and Palettes](https://normalgamer.github.io/NES-Development/04-Displaying_sprites/)
 
 5. [Multiple Sprites](https://normalgamer.github.io/NES-Development/05-Multiple_sprites/)
+
+6. [Controller Input](https://normalgamer.github.io/NES-Development/06-Controller_input/)
