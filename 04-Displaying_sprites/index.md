@@ -152,6 +152,6 @@ Expanded the reset code. You don't need to know what it exactly does, it just re
 
 ## Putting it all together
 
-Download NESASM3 and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/04-Displaying_sprites/sprites.zip). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
+Download NESASM3, the source code and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/04-Displaying_sprites/sprites.zip). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
 
 Congratulations! You can now see Mario's head's back on screen!
