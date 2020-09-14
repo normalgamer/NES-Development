@@ -109,6 +109,6 @@ Forever:
 
 ## Putting it all together
 
-Download NESASM3 and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/03-First_Program/background.zip). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
+Download NESASM3, the source code and Super Mario Bros.' CHR file from [here](https://github.com/normalgamer/NES-Development/raw/gh-pages/03-First_Program/background.zip). Edit the build.bat file and change the .asm file's name to your file's name. Double click on it and you'll have a .nes file to run on an emulator.
 
 Congratulations! You made your first NES program!
