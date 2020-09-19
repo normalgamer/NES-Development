@@ -70,6 +70,12 @@ Anything that moves separately from the background is made of sprites. A sprite 
 
 If you wanna inspect the mario.chr file, download [YY-CHR](https://www.smwcentral.net/?p=section&a=details&id=22338) and open your mario.chr file.
 
+To include mario.chr in the ROM:
+
+```
+  .org $0000  ; Remember that the CHR ROM is connected to the [PPU's memory map](https://normalgamer.github.io/NES-Development/01-Introduction/#ppu-overview), NOT the CPU's
+```
+
 ### Sprite DMA
 
 In order to copy sprites to the sprite memory, Direct Memory Access (DMA) is used. This allows to copy a block of RAM from CPU memory to the PPU sprite memory. The onboard RAM space from $0200 to $02FF is usually used. To start the transfer, two bytes need to be written to the PPU ports:
