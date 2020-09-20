@@ -59,11 +59,15 @@ Function:
 
 `LDA $0005` loads the value stored in address $0005 into the accumulator
 
-The # tells the CPU to load a hex value.
-
 The $ tells the CPU to load the value stored in the address.
 
-The % tells the CPU to load a binary value.
+The # loads an direct value:
+
+- The # loads a decimal value.
+  
+- The #$ loads a hex value.
+  
+- The #% tells the CPU to load a binary value.
 
 ## Registers
 
