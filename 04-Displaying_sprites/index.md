@@ -41,7 +41,7 @@ PaletteData:
   .db $0F,$1C,$15,$14,$0F,$02,$38,$3C,$0F,$1C,$15,$14,$0F,$02,$38,$3C ; Sprite palette data
 ```
 
-Note: if you want to see how the colors look, open YY-CHR and tweak the colors. You should use the top palette for background and the bottom for sprites (the palettes are at the right of the PAL SET button, under the sprite editor). 
+If you want to see how the colors look, download [YY-CHR](http://www.romhacking.net/utilities/119/) (I know this is an old version but it tells you the hex number of the tile you are pointing to). To tweak the colors, change the palette (below the sprite editor).
 
 Then a loop is used to copy those bytes to the palette in the PPU. The X register is used as an index into the palette, and used to count how many times the loop has repeated. To copy both palettes (a total of 32 bytes) the loop starts at 0 and counts up to 32:
 
