@@ -41,7 +41,7 @@ PaletteData:
   .db $0F,$1C,$15,$14,$0F,$02,$38,$3C,$0F,$1C,$15,$14,$0F,$02,$38,$3C ; Sprite palette data
 ```
 
-If you want to see how the colors look, download [YY-CHR](http://www.romhacking.net/utilities/119/) (I know this is an old version but it tells you the hex number of the tile you are pointing to). To tweak the colors, change the palette (below the sprite editor).
+If you want to see how the colors look, download [YY-CHR](http://www.romhacking.net/utilities/119/) (I know this is an old version but it tells you the hex number of the tile you are pointing to). To tweak the colors, open the mario.chr file (download at the end of the lesson) and change the palette (below the sprite editor).
 
 Then a loop is used to copy those bytes to the palette in the PPU. The X register is used as an index into the palette, and used to count how many times the loop has repeated. To copy both palettes (a total of 32 bytes) the loop starts at 0 and counts up to 32:
 
@@ -68,7 +68,7 @@ Once the loop finishes, the palette is fully copied.
 
 Anything that moves separately from the background is made of sprites. A sprite is an 8x8 pixel tile that the PPU renders on screen. Generally objects are made from multiple sprited next to each other (for example Mario). The PPU has enough memory for 64 sprites. This memory is separate from all other video memory.
 
-If you wanna inspect the mario.chr file, download [YY-CHR](https://www.smwcentral.net/?p=section&a=details&id=22338) and open your mario.chr file.
+If you wanna inspect the mario.chr file, open your mario.chr file with YY-CHR.
 
 To include mario.chr in the ROM:
 
